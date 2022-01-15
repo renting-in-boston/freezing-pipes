@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/renting-in-boston/freezing-pipes/issues"
   },
-  "homepage": "https://github.com/renting-in-boston/freezing-pipes#readme"
+  "homepage": "https://github.com/renting-in-boston/freezing-pipes#readme",
+  "dependencies": {
+    "googleapis": "^92.0.0",
+    "requests": "^0.3.0"
+  }
 }
