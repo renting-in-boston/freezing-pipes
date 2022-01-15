@@ -1,7 +1,9 @@
 import * as dotenv from "dotenv";
+import { singleton } from "tsyringe";
 
 dotenv.config();
 
+@singleton()
 export class ApplicationConfig {
     getGoogleOAuthClientId(): string {
         return process.env.GOOGLE_OAUTH_CLIENT_ID;
@@ -13,5 +15,9 @@ export class ApplicationConfig {
 
     getOpenWeatherApiToken(): string {
         return process.env.OPEN_WEATHER_API_KEY;
+    }
+
+    getGoogleOAuthRedirectUrl(): string {
+        return process.env.GOOGLE_OAUTH_REDIRECT_URL;
     }
 }
