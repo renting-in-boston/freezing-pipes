@@ -1,4 +1,5 @@
 import * as dotenv from 'dotenv';
+import { singleton } from 'tsyringe';
 
 dotenv.config()
 
@@ -7,6 +8,7 @@ export interface Location {
     long: number
 };
 
+@singleton()
 export class ApplicationConfig {
 
     getGoogleOAuthClientId(): string {
@@ -27,4 +29,9 @@ export class ApplicationConfig {
             long: parseFloat(process.env.WEATHER_LOCATION_LONGITUDE),
         }
     }
+
+    getGoogleOAuthRedirectUrl(): string {
+        return process.env.GOOGLE_OAUTH_REDIRECT_URL;
+    }
+
 }
