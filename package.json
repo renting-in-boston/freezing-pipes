@@ -1,0 +1,19 @@
+{
+  "name": "freezing-pipes",
+  "version": "1.0.0",
+  "description": "An application to notify annoying landlords of pipes that will not freeze.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renting-in-boston/freezing-pipes.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renting-in-boston/freezing-pipes/issues"
+  },
+  "homepage": "https://github.com/renting-in-boston/freezing-pipes#readme"
+}
