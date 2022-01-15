@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/renting-in-boston/freezing-pipes#readme",
   "dependencies": {
-    "googleapis": "^92.0.0",
-    "requests": "^0.3.0"
+    "axios": "^0.24.0",
+    "googleapis": "^92.0.0"
   }
 }
