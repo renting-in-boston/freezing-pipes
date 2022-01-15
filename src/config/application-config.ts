@@ -20,4 +20,8 @@ export class ApplicationConfig {
     getGoogleOAuthRedirectUrl(): string {
         return process.env.GOOGLE_OAUTH_REDIRECT_URL;
     }
+
+    getImageDirectory(): string {
+        return process.env.IMAGE_DIRECTORY;
+    }
 }
