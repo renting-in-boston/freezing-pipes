@@ -4,7 +4,7 @@
   "description": "An application to notify annoying landlords of pipes that will not freeze.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require ts-node/register ./src/**/*.spec.ts"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "tsyringe": "4.6.0"
   },
   "devDependencies": {
+    "@types/chai": "^4.3.0",
     "@types/mocha": "^9.0.0",
     "@types/node": "17.0.8",
     "@types/nodemailer": "^6.4.4",
