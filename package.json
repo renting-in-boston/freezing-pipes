@@ -18,6 +18,10 @@
   "homepage": "https://github.com/renting-in-boston/freezing-pipes#readme",
   "dependencies": {
     "axios": "^0.24.0",
+    "dotenv": "^12.0.3",
     "googleapis": "^92.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8"
   }
 }
