@@ -1,6 +1,5 @@
 import { injectable } from "tsyringe";
-import { gmail_v1, google } from "googleapis";
-import { ApplicationConfig } from "../config/application-config";
+import { gmail_v1 } from "googleapis";
 import MailComposer = require("nodemailer/lib/mail-composer")
 import { Readable } from "stream";
 
@@ -16,7 +15,7 @@ import { Readable } from "stream";
 @injectable()
 export class GoogleEmailSender implements EmailSender {
 
-    constructor(private readonly config: ApplicationConfig, private gmail: gmail_v1.Gmail) {
+    constructor(private gmail: gmail_v1.Gmail) {
         /*const oauth2Client = new google.auth.OAuth2(
             config.getGoogleOAuthClientId(),
             config.getGoogleOAuthClientSecret(),
